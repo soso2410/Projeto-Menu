@@ -14,7 +14,7 @@ function calc(){
         var id = input.id;
 
         output.innerHTML += `Produto: ${prods[id-1].name}  - Preço: ${prods[id-1].price} - Quantidade: ${input.value} </br>`;
-        total            += prods[id-1].price * input.value;
+        total            += prods[id-1].price * parseFloat(input.value);
     }
 
     output.innerHTML += `<h2>Total: ${total}</h2>`;
