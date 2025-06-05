@@ -4,33 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu</title>
+  <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-  <div>
-    <img src="home.jpg">
-    <h2>Menu - Faça A Sua Escolha</h2>
-    <div class="section-title">Prato Principal</div>
-    <div class="subtitle">Todos os pratos acompanham arroz, feijão e sobremesa do dia.</div>
-    <img src="bife.jpg" alt="Bife com Batata">
-    <img src="coxa.jpg" alt="Coxa de Frango Crocante">
-    <img src="panela.jpg" alt="Carne de Panela">
+    <div class="container">
+        <div>
+    <img class="image-home" src="home.jpg">
+   <div class="border">
+     <h2>Menu - Faça A Sua Escolha</h2>
+     <div class="section-title">Prato Principal</div>
+     <div class="subtitle">Todos os pratos acompanham arroz, feijão e sobremesa do dia.</div>
+     <div class="image-geral">
+        <div class="image">
+         <img src="bife.jpg" alt="Bife com Batata">
+         <div class="price">R$30,00</div>
+        </div>
+        <div class="image">
+         <img src="coxa.jpg" alt="Coxa de Frango Crocante">
+         <div class="price">R$25,00</div>
+        </div>
+        <div class="image">
+         <img src="panela.jpg" alt="Carne de Panela">
+         <div class="price">R$22,00</div>
+        </div>
+     </div>
+  </div>
   </div>
 
-   <div> 
+   <div class="border"> 
      <div class="section-title">Acompanhamentos</div>
      <div class="subtitle">Porções para uma pessoa.</div>
-     <img src="farofa.jpg" alt="Farofa">
-     <img src="salad.jpg" alt="Salada">
-     <img src="torresmo.jpg" alt="Torresmo">
+     <div class="image-geral">
+        <div class="image">
+         <img src="farofa.jpg" alt="Farofa">
+         <div class="price">R$10,00</div>
+        </div>
+        <div class="image">
+         <img src="salad.jpg" alt="Salada">
+         <div class="price">R$8,00</div>
+        </div>
+        <div class="image">
+         <img src="torresmo.jpg" alt="Torresmo">
+         <div class="price">R$12,00</div>
+        </div>
+     </div>
    </div>
 
-    <form>
+   <div class="border">
+     <form>
       <div class="section-title">Dados Pessoais</div>
-      <input type="text" placeholder="Nome completo">
-      <input type="tel" placeholder="Telefone">
-      <input type="email" placeholder="Email">
+      <input type="text" placeholder="Nome completo:">
+      <input type="tel" placeholder="Telefone:">
+      <input type="email" placeholder="Email:">
       <button id="calcular" type="button">Calcular</button>
     </form>
+   </div> 
   </div>
+    </div>
 </body>
 </html>
