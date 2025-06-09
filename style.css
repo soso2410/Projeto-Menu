@@ -51,7 +51,7 @@ h2 {
 }
 
 .image {
-  background-color: #F5F5F5;
+  background-color: #f9f9f9;
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 10px;
@@ -124,9 +124,9 @@ button#calcular:hover {
 .border {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   padding: 20px;
-  margin-bottom: 40px; /* espaço entre os blocos */
+  margin-bottom: 40px; 
 }
 
 .border form {
