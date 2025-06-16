@@ -139,3 +139,72 @@ button#calcular:hover {
   margin: 0 auto;
   height: 310px;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  button#calcular {
+    width: 100%;
+  }
+
+  form input {
+    max-width: 100%;
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .image-geral {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .image {
+    width: 100%;
+    padding: 8px;
+  }
+
+  button#calcular {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  form input {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  h2, .section-title, .subtitle {
+    font-size: 18px;
+  }
+
+  .image img {
+    height: auto;
+  }
+
+  form {
+    gap: 10px;
+  }
+
+  button#calcular {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
