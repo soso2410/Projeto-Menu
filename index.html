@@ -9,6 +9,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
   <script src="quantity.js"></script>
+  <script src="javascript.js"></script>
 </head>
 <body>
   <div class="container">
@@ -19,18 +20,20 @@
         <div class="section-title">Prato Principal</div>
         <div class="subtitle">Todos os pratos acompanham arroz, feijão e sobremesa do dia.</div>
         <div class="image-geral">
-          <div class="image">
+          <div class="image" id="quantity">
             <img src="bife.jpg" alt="Bife com Batata">
+            <div class="name">Bife com Batata</div> 
             <div class="price">R$30,00</div>
             <div class="quantity buttons_added">
                 <input type="button" value="-" class="minus">
                 <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
                    class="input-text qty text" size="4" pattern="" inputmode="">
-                <input type="button" value="+" class="plus">   
+                <input type="button" value="+" class="plus">  
             </div>
           </div>
           <div class="image">
             <img src="coxa.jpg" alt="Coxa de Frango Crocante">
+            <div class="name">Coxa de Frango Crocante</div> 
             <div class="price">R$25,00</div>
             <div class="quantity buttons_added">
                 <input type="button" value="-" class="minus">
@@ -41,6 +44,7 @@
           </div>
           <div class="image">
             <img src="panela.jpg" alt="Carne de Panela">
+            <div class="name">Carne de Panela</div>
             <div class="price">R$22,00</div>
             <div class="quantity buttons_added">
                 <input type="button" value="-" class="minus">
@@ -59,6 +63,7 @@
       <div class="image-geral">
         <div class="image">
           <img src="farofa.jpg" alt="Farofa">
+          <div class="name">Farofa</div> 
           <div class="price">R$10,00</div>
           <div class="quantity buttons_added">
                 <input type="button" value="-" class="minus">
@@ -69,16 +74,18 @@
         </div>
         <div class="image">
           <img src="salad.jpg" alt="Salada">
+          <div class="name">Salada</div> 
           <div class="price">R$8,00</div>
           <div class="quantity buttons_added">
                 <input type="button" value="-" class="minus">
                 <input type="number" step="1" min="0" max="" id="5" name="quantity" value="0" title="Qty"
                    class="input-text qty text" size="4" pattern="" inputmode="">
-                <input type="button" value="+" class="plus">   
+                <input type="button" value="+" class="plus">  
             </div>
         </div>
         <div class="image">
           <img src="torresmo.jpg" alt="Torresmo">
+          <div class="name">Torresmo</div> 
           <div class="price">R$12,00</div>
           <div class="quantity buttons_added">
                 <input type="button" value="-" class="minus">
@@ -93,18 +100,18 @@
     <div class="border">
       <form>
         <div class="section-title">Dados Pessoais</div>
-        <input type="text" placeholder="Nome completo:">
-        <input type="tel" id="tel" placeholder="Telefone:">
-        <input type="email" placeholder="Email:">
-        <button id="calcular" type="button">Calcular</button>
+        <input id="nome" type="text" placeholder="Nome completo:">
+        <input id="tel" type="tel" id="tel" placeholder="Telefone:">
+        <input id="email" type="email" placeholder="Email:">
+        <button onclick="calc()"  id="calcular" type="button">Calcular</button>
       </form>
     </div> 
+     <div id="output"></div>
   </div>
   <script>
     $(document).ready(function(){
       $('#tel').mask('(00) 00000-0000');
     });
   </script>
-  <div id="output"></div>
 </body>
 </html>
